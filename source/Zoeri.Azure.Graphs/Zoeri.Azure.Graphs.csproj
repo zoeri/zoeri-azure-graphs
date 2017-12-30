@@ -10,7 +10,7 @@
     <Description>Provides extensions to DocumentClient to streamline working with Gremlin graph queries and commands.</Description>
     <Copyright>Copyright © 2018 Zoeri</Copyright>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>C:\git\zoeri\zoeri-azure-graphs\Zoeri.Shared.Pair.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\Zoeri.Shared.Pair.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
