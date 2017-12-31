@@ -7,7 +7,7 @@
     <Company>Zoeri</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <Description>Provides extensions to DocumentClient to streamline working with Gremlin graph queries and commands.</Description>
+    <Description>Provides extension methods for Microsoft.Azure.Documents.Client.DocumentClient that streamline CRUD operations against a Cosmos DB graph using generated Gremlin script.</Description>
     <Copyright>Copyright © 2018 Zoeri</Copyright>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\Zoeri.Shared.Pair.snk</AssemblyOriginatorKeyFile>
