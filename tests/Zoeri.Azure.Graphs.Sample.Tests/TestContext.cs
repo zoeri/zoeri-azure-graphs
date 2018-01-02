@@ -40,39 +40,6 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
     public class TestContext
         : IDisposable
     {
-        #region Fields
-
-        /// <summary>
-        /// The key for the name of the configuration settings key the contains the URI to the Cosmos DB endpoint.
-        /// </summary>
-        public const string CosmosDbEndpointAppSettingsKey = "CosmosDbEndpoint";
-        /// <summary>
-        /// The key for the configuration setting containing the auth key for the target Cosmos DB service.
-        /// </summary>
-        public const string CosmosDbAuthKeyAppSettingsKey = "CosmosDbAuthKey";
-
-        /// <summary>
-        /// The key for the name of the default graph database with which to connect.
-        /// </summary>
-        public const string CosmosDbDatabaseAppSettingsKey = "CosmosDbDatabaseName";
-
-        /// <summary>
-        /// The key for the name of the default collection against which to execute operations.
-        /// </summary>
-        public const string CosmosDbCollectionIdAppSettingsKey = "CosmosDbCollectionId";
-
-        /// <summary>
-        /// The key for the format string based upon which test email addresses are based.
-        /// </summary>
-        public const string TestUserEmailFormatAppSettingsKey = "TestUserEmailFormat";
-
-        /// <summary>
-        /// They key for the phone number to which test messages are sent.
-        /// </summary>
-        public const string TestUserPhoneNumberKey = "TestUserPhoneNumber";
-
-        #endregion Fields
-
         #region Constructors
 
         /// <summary>
@@ -87,9 +54,9 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
         {
             //TODO: Configure the test environment to connect to a live graph database. Use appSettings.local.json as a template.
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                //.AddJsonFile("appsettings.json")
-                .AddJsonFile("appsettings.local.json")
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    //.AddJsonFile("appsettings.json")
+                    .AddJsonFile("appsettings.local.json")
                 ;
 
             Configuration = builder.Build();
@@ -125,6 +92,39 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
         }
 
         #endregion Constructors
+
+        #region Fields
+
+        /// <summary>
+        /// The key for the name of the configuration settings key the contains the URI to the Cosmos DB endpoint.
+        /// </summary>
+        public const string CosmosDbEndpointAppSettingsKey = "CosmosDbEndpoint";
+        /// <summary>
+        /// The key for the configuration setting containing the auth key for the target Cosmos DB service.
+        /// </summary>
+        public const string CosmosDbAuthKeyAppSettingsKey = "CosmosDbAuthKey";
+
+        /// <summary>
+        /// The key for the name of the default graph database with which to connect.
+        /// </summary>
+        public const string CosmosDbDatabaseAppSettingsKey = "CosmosDbDatabaseName";
+
+        /// <summary>
+        /// The key for the name of the default collection against which to execute operations.
+        /// </summary>
+        public const string CosmosDbCollectionIdAppSettingsKey = "CosmosDbCollectionId";
+
+        /// <summary>
+        /// The key for the format string based upon which test email addresses are based.
+        /// </summary>
+        public const string TestUserEmailFormatAppSettingsKey = "TestUserEmailFormat";
+
+        /// <summary>
+        /// They key for the phone number to which test messages are sent.
+        /// </summary>
+        public const string TestUserPhoneNumberKey = "TestUserPhoneNumber";
+
+        #endregion Fields
 
         #region Properties
 

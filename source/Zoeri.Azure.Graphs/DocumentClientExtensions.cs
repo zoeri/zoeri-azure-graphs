@@ -353,16 +353,16 @@ namespace Zoeri.Azure.Graphs
         }
 
         /// <summary>
-            /// Adds the specified <paramref name="vertex" /> to the specified <paramref name="collection" />.
-            /// </summary>
-            /// <typeparam name="TVertex"></typeparam>
-            /// <param name="client">The <see cref="DocumentClient" /> using to connect to the data source.</param>
-            /// <param name="collection">The <see cref="DocumentCollection" /></param>
-            /// against which to perform the add.
-            /// <param name="vertex">The <see cref="IVertex" /> to add to the specified <paramref name="collection" />.</param>
-            /// <param name="cancellationToken">A <see cref="CancellationToken" /> used to abort execution.</param>
-            /// <returns>The added vertex.</returns>
-            public static async Task<TVertex> AddVertexAsync<TVertex>
+        /// Adds the specified <paramref name="vertex" /> to the specified <paramref name="collection" />.
+        /// </summary>
+        /// <typeparam name="TVertex"></typeparam>
+        /// <param name="client">The <see cref="DocumentClient" /> using to connect to the data source.</param>
+        /// <param name="collection">The <see cref="DocumentCollection" /></param>
+        /// against which to perform the add.
+        /// <param name="vertex">The <see cref="IVertex" /> to add to the specified <paramref name="collection" />.</param>
+        /// <param name="cancellationToken">A <see cref="CancellationToken" /> used to abort execution.</param>
+        /// <returns>The added vertex.</returns>
+        public static async Task<TVertex> AddVertexAsync<TVertex>
         (
             this DocumentClient client,
             DocumentCollection collection,
@@ -512,16 +512,16 @@ namespace Zoeri.Azure.Graphs
         }
 
         /// <summary>
-            /// Executes the specified <paramref name="gremlinScript" /> against the specified <paramref name="collection" />.
-            /// </summary>
-            /// <typeparam name="TVertex">The type of <see cref="IVertex" /> to manipulate.</typeparam>
-            /// <param name="client"></param>
-            /// <param name="collection"></param>
-            /// <param name="gremlinScript"></param>
-            /// <param name="cancellationToken"></param>
-            /// <param name="allowNullResult"></param>
-            /// <returns></returns>
-            public static async Task<TVertex> SubmitWithSingleResultAsync<TVertex>
+        /// Executes the specified <paramref name="gremlinScript" /> against the specified <paramref name="collection" />.
+        /// </summary>
+        /// <typeparam name="TVertex">The type of <see cref="IVertex" /> to manipulate.</typeparam>
+        /// <param name="client"></param>
+        /// <param name="collection"></param>
+        /// <param name="gremlinScript"></param>
+        /// <param name="cancellationToken"></param>
+        /// <param name="allowNullResult"></param>
+        /// <returns></returns>
+        public static async Task<TVertex> SubmitWithSingleResultAsync<TVertex>
         (
             this DocumentClient client,
             DocumentCollection collection,

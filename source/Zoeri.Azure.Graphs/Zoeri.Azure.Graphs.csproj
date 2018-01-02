@@ -11,6 +11,11 @@
     <Copyright>Copyright © 2018 Zoeri</Copyright>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\Zoeri.Shared.Pair.snk</AssemblyOriginatorKeyFile>
+    <PackageProjectUrl>http://zoeri.com/zoeri-azure-graphs/docs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zoeri/zoeri-azure-graphs</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>asp.net core azure cosmos db DocumentClient Gremlin graph api</PackageTags>
+    <PackageLicenseUrl>http://zoeri.com/zoeri-azure-graphs/LICENSE.txt</PackageLicenseUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

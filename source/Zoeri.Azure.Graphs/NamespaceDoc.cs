@@ -30,7 +30,8 @@ using Microsoft.Azure.Documents.Client;
 namespace Zoeri.Azure.Graphs
 {
     /// <summary>
-    /// Contains Cosmos DB extension methods for <see cref="DocumentClient" /> and supporting classes that streamline CRUD operations against a Cosmos DB graph using the Gremlin language.
+    /// Contains Cosmos DB extension methods for <see cref="DocumentClient" /> and supporting classes that streamline CRUD
+    /// operations against a Cosmos DB graph using the Gremlin language.
     /// </summary>
     internal static class NamespaceDoc
     {
