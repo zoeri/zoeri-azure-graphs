@@ -11,9 +11,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{48D5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{95BA9FDF-41EA-4157-8BF9-CF1838029885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoeri.Azure.Graphs.Sample.Tests", "tests\Zoeri.Azure.Graphs.Sample.Tests\Zoeri.Azure.Graphs.Sample.Tests.csproj", "{BADB9684-0B4D-4D90-ACF1-B952A725B1FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoeri.Azure.Graphs.Sample.Tests", "tests\Zoeri.Azure.Graphs.Sample.Tests\Zoeri.Azure.Graphs.Sample.Tests.csproj", "{BADB9684-0B4D-4D90-ACF1-B952A725B1FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoeri.Azure.Graphs.Sample", "samples\Zoeri.Azure.Graphs.Sample\Zoeri.Azure.Graphs.Sample.csproj", "{C3E66F90-07DA-4BDE-A8B9-96D97E7B9C5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoeri.Azure.Graphs.Sample", "samples\Zoeri.Azure.Graphs.Sample\Zoeri.Azure.Graphs.Sample.csproj", "{C3E66F90-07DA-4BDE-A8B9-96D97E7B9C5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{B4E09A5E-F38B-4B69-A416-99216345593E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+		zoeri-azure-graphs.shfbproj = zoeri-azure-graphs.shfbproj
+		Zoeri.Shared.Pair.snk = Zoeri.Shared.Pair.snk
+		Zoeri.Shared.Public.snk = Zoeri.Shared.Public.snk
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
