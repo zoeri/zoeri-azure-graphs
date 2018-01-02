@@ -30,6 +30,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Zoeri.Azure.Graphs
 {
+    /// <inheritdoc />
     /// <summary>
     /// An convenient implementation of <see cref="IVertex" /> from which entity types can derive. This is an optional base
     /// class only.

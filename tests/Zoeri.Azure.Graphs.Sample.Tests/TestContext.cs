@@ -83,7 +83,7 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
         /// <see cref="CosmosDbAuthKeyAppSettingsKey" /> to connect to the data source.
         /// Connects directly to the datasource using TCP.
         /// </remarks>
-        public TestContext(string databaseName = null, string collectionId = null)
+        public TestContext(string databaseName = null, string collectionId = null, bool isOffline = false)
         {
             //TODO: Configure the test environment to connect to a live graph database. Use appSettings.local.json as a template.
             var builder = new ConfigurationBuilder()
@@ -102,6 +102,7 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
             collectionId = collectionId ?? Configuration[CosmosDbCollectionIdAppSettingsKey];
             if (string.IsNullOrWhiteSpace(collectionId)) throw new ArgumentException($"No collectionId was specified.");
 
+            IsOffline = isOffline;
             CancellationTokenSource = new CancellationTokenSource();
 
             try
@@ -169,6 +170,11 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
             get;
         }
 
+        public bool IsOffline
+        {
+            get;
+        }
+
         #endregion Properties
 
         #region Methods
@@ -181,7 +187,10 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
         /// <returns>A <see cref="Task" /> that tracks the initialization process.</returns>
         private async Task InitializeAsync(string databaseName, string collectionId)
         {
-            await Client.OpenAsync(CancellationTokenSource.Token);
+            if (!IsOffline)
+            {
+                await Client.OpenAsync(CancellationTokenSource.Token);
+            }
 
             try
             {

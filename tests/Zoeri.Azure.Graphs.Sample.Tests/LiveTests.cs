@@ -35,7 +35,7 @@ using Zoeri.Azure.Graphs.Sample.Model;
 namespace Zoeri.Azure.Graphs.Sample.Tests
 {
     [TestClass]
-    public class GraphTests
+    public class LiveTests
     {
         [TestMethod]
         [ExpectedException(typeof(AggregateException))]
