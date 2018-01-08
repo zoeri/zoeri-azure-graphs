@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <Version>0.1.0-preview</Version>
+    <Version>0.1.1-preview</Version>
     <Authors>Sean Ian Hale</Authors>
     <Company>Zoeri</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -11,7 +11,7 @@
     <Copyright>Copyright © 2018 Zoeri</Copyright>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\Zoeri.Shared.Pair.snk</AssemblyOriginatorKeyFile>
-    <PackageProjectUrl>http://zoeri.com/zoeri-azure-graphs/docs</PackageProjectUrl>
+    <PackageProjectUrl>http://zoeri.com/zoeri-azure-graphs/docs/0.1.1/index.html</PackageProjectUrl>
     <RepositoryUrl>https://github.com/zoeri/zoeri-azure-graphs</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>asp.net core azure cosmos db DocumentClient Gremlin graph api</PackageTags>

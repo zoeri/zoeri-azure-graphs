@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AddEdgeAsync method" Url="html/d1e4a1b0-1c49-b9bd-541a-defc8b48807f.htm" />
+  <HelpKINode Title="AddVertexAsync method" Url="html/fc6f161a-a13f-6eed-d0f9-c02a146cf650.htm" />
+  <HelpKINode Title="AppendProperty method" Url="html/8c18b823-5043-fd69-eaa3-cb8997607361.htm" />
+  <HelpKINode Title="CanConvert method" Url="html/0ca7ba43-96aa-885c-741e-6bc90eb4de49.htm" />
+  <HelpKINode Title="DeleteVertexAsync method" Url="html/7fad51f6-de2f-ec46-a663-cee5a2a881f9.htm" />
+  <HelpKINode Title="DocumentClientExtensions class">
+    <HelpKINode Title="DocumentClientExtensions Class" Url="html/a9fe8510-ba7a-f324-e42f-e7ed0631776b.htm" />
+    <HelpKINode Title="methods" Url="html/2e0a0f66-37b5-e175-bb95-908a876c4f4f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DocumentClientExtensions.AddEdgeAsync method" Url="html/d1e4a1b0-1c49-b9bd-541a-defc8b48807f.htm" />
+  <HelpKINode Title="DocumentClientExtensions.AddVertexAsync method" Url="html/fc6f161a-a13f-6eed-d0f9-c02a146cf650.htm" />
+  <HelpKINode Title="DocumentClientExtensions.AppendProperty method" Url="html/8c18b823-5043-fd69-eaa3-cb8997607361.htm" />
+  <HelpKINode Title="DocumentClientExtensions.DeleteVertexAsync method" Url="html/7fad51f6-de2f-ec46-a663-cee5a2a881f9.htm" />
+  <HelpKINode Title="DocumentClientExtensions.GetVertexAsync method" Url="html/e4dd9f88-5e23-f0a7-9d48-3009287d82a6.htm" />
+  <HelpKINode Title="DocumentClientExtensions.SubmitWithSingleResultAsync method" Url="html/1db2aee4-181d-4510-2b6d-1092802b1069.htm" />
+  <HelpKINode Title="DocumentClientExtensions.ToAddEdgeCommand(Of TSource, TTarget) method" Url="html/bd3eb934-6d29-68a0-e056-1e38111f78f4.htm" />
+  <HelpKINode Title="DocumentClientExtensions.ToAddEdgeCommand&lt;TSource, TTarget&gt; method" Url="html/bd3eb934-6d29-68a0-e056-1e38111f78f4.htm" />
+  <HelpKINode Title="DocumentClientExtensions.ToAddVertexCommand(Of TVertex) method" Url="html/41c50b18-a3ed-2e06-288d-192f84c8bf7b.htm" />
+  <HelpKINode Title="DocumentClientExtensions.ToAddVertexCommand&lt;TVertex&gt; method" Url="html/41c50b18-a3ed-2e06-288d-192f84c8bf7b.htm" />
+  <HelpKINode Title="DocumentClientExtensions.ToUpdateVertexCommand(Of TVertex) method" Url="html/3f61894f-7c64-a4e1-5b0f-7534d578a8ff.htm" />
+  <HelpKINode Title="DocumentClientExtensions.ToUpdateVertexCommand&lt;TVertex&gt; method" Url="html/3f61894f-7c64-a4e1-5b0f-7534d578a8ff.htm" />
+  <HelpKINode Title="DocumentClientExtensions.UpdateVertexAsync method" Url="html/d9e4d90f-72e3-b753-8a7b-0f77c9db2d01.htm" />
+  <HelpKINode Title="GetVertexAsync method" Url="html/e4dd9f88-5e23-f0a7-9d48-3009287d82a6.htm" />
+  <HelpKINode Title="Id property">
+    <HelpKINode Title="IVertex.Id Property " Url="html/27fe5721-6cb6-166c-f4e7-e82131c514d2.htm" />
+    <HelpKINode Title="Vertex.Id Property " Url="html/66060924-86d9-d5ce-aa8c-270e559b31a0.htm" />
+    <HelpKINode Title="VertexProperty(T).Id Property " Url="html/524eb82e-eefb-2c2b-d6df-502c15bf1be9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IdPropertyName field" Url="html/d3f528ef-9dd0-0384-d89e-7c9e3ba95b87.htm" />
+  <HelpKINode Title="IVertex interface">
+    <HelpKINode Title="IVertex Interface" Url="html/dbad1859-6cf3-d5b1-8694-760c49558657.htm" />
+    <HelpKINode Title="properties" Url="html/dc02a440-15db-1ebc-7b7b-42719db92d4b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IVertex.Id property" Url="html/27fe5721-6cb6-166c-f4e7-e82131c514d2.htm" />
+  <HelpKINode Title="IVertex.Label property" Url="html/bdfbe247-7a54-ce69-8bdd-954b4d12f6c2.htm" />
+  <HelpKINode Title="IVertex.Properties property" Url="html/eac8fa90-ee3d-ac95-2db0-fff13fcfa8a7.htm" />
+  <HelpKINode Title="IVertex.Type property" Url="html/bb5316e4-daa1-9ef8-3d9b-a62a37700f49.htm" />
+  <HelpKINode Title="Label property">
+    <HelpKINode Title="IVertex.Label Property " Url="html/bdfbe247-7a54-ce69-8bdd-954b4d12f6c2.htm" />
+    <HelpKINode Title="Vertex.Label Property " Url="html/8403438d-6a79-095d-1bbc-83966992dfdc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LabelPropertyName field" Url="html/6f8d4f7c-96f6-be97-3b39-753c27510645.htm" />
+  <HelpKINode Title="Properties property">
+    <HelpKINode Title="IVertex.Properties Property " Url="html/eac8fa90-ee3d-ac95-2db0-fff13fcfa8a7.htm" />
+    <HelpKINode Title="Vertex.Properties Property " Url="html/3017da31-ec0a-5bee-c4f6-ca051d436a35.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PropertiesPropertyName field" Url="html/1df1201b-98da-7bf0-9f49-198521ad9f45.htm" />
+  <HelpKINode Title="ReadJson method" Url="html/04e365af-c7b7-72f2-511d-a81971ba3467.htm" />
+  <HelpKINode Title="SubmitWithSingleResultAsync method" Url="html/1db2aee4-181d-4510-2b6d-1092802b1069.htm" />
+  <HelpKINode Title="ToAddEdgeCommand(Of TSource, TTarget) method" Url="html/bd3eb934-6d29-68a0-e056-1e38111f78f4.htm" />
+  <HelpKINode Title="ToAddEdgeCommand&lt;TSource, TTarget&gt; method" Url="html/bd3eb934-6d29-68a0-e056-1e38111f78f4.htm" />
+  <HelpKINode Title="ToAddVertexCommand(Of TVertex) method" Url="html/41c50b18-a3ed-2e06-288d-192f84c8bf7b.htm" />
+  <HelpKINode Title="ToAddVertexCommand&lt;TVertex&gt; method" Url="html/41c50b18-a3ed-2e06-288d-192f84c8bf7b.htm" />
+  <HelpKINode Title="ToUpdateVertexCommand(Of TVertex) method" Url="html/3f61894f-7c64-a4e1-5b0f-7534d578a8ff.htm" />
+  <HelpKINode Title="ToUpdateVertexCommand&lt;TVertex&gt; method" Url="html/3f61894f-7c64-a4e1-5b0f-7534d578a8ff.htm" />
+  <HelpKINode Title="Type property">
+    <HelpKINode Title="IVertex.Type Property " Url="html/bb5316e4-daa1-9ef8-3d9b-a62a37700f49.htm" />
+    <HelpKINode Title="Vertex.Type Property " Url="html/8b675328-67c4-2341-f470-5b6004691365.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TypePropertyName field" Url="html/4c6d3c1d-be31-f27b-4809-fa53d359bee4.htm" />
+  <HelpKINode Title="TypePropertyValue field" Url="html/70fd4284-bdef-8eb6-3670-9114d97028c7.htm" />
+  <HelpKINode Title="UpdateVertexAsync method" Url="html/d9e4d90f-72e3-b753-8a7b-0f77c9db2d01.htm" />
+  <HelpKINode Title="Value property" Url="html/da363581-dc78-ed62-ad33-2c8e04e75767.htm" />
+  <HelpKINode Title="Vertex class">
+    <HelpKINode Title="Vertex Class" Url="html/ffd6ecbb-c57c-95d3-e449-d3d52ea6b0d8.htm" />
+    <HelpKINode Title="constructor" Url="html/0f30ebde-cc25-fa57-8fc1-70e82b78cc55.htm" />
+    <HelpKINode Title="fields" Url="html/46b038df-4adb-244f-77e1-3d70f2835573.htm" />
+    <HelpKINode Title="methods" Url="html/c693db43-aeb1-91b5-1e4c-eb2f8b67b5bc.htm" />
+    <HelpKINode Title="properties" Url="html/2bffb59d-c147-8291-3772-657b6263096e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Vertex.Id property" Url="html/66060924-86d9-d5ce-aa8c-270e559b31a0.htm" />
+  <HelpKINode Title="Vertex.IdPropertyName field" Url="html/d3f528ef-9dd0-0384-d89e-7c9e3ba95b87.htm" />
+  <HelpKINode Title="Vertex.Label property" Url="html/8403438d-6a79-095d-1bbc-83966992dfdc.htm" />
+  <HelpKINode Title="Vertex.LabelPropertyName field" Url="html/6f8d4f7c-96f6-be97-3b39-753c27510645.htm" />
+  <HelpKINode Title="Vertex.Properties property" Url="html/3017da31-ec0a-5bee-c4f6-ca051d436a35.htm" />
+  <HelpKINode Title="Vertex.PropertiesPropertyName field" Url="html/1df1201b-98da-7bf0-9f49-198521ad9f45.htm" />
+  <HelpKINode Title="Vertex.Type property" Url="html/8b675328-67c4-2341-f470-5b6004691365.htm" />
+  <HelpKINode Title="Vertex.TypePropertyName field" Url="html/4c6d3c1d-be31-f27b-4809-fa53d359bee4.htm" />
+  <HelpKINode Title="Vertex.TypePropertyValue field" Url="html/70fd4284-bdef-8eb6-3670-9114d97028c7.htm" />
+  <HelpKINode Title="Vertex.Vertex constructor" Url="html/0f30ebde-cc25-fa57-8fc1-70e82b78cc55.htm" />
+  <HelpKINode Title="VertexProperty(Of T) class">
+    <HelpKINode Title="VertexProperty(T) Class" Url="html/d6df9c54-26b0-89c7-cdde-cec83f4024c1.htm" />
+    <HelpKINode Title="constructor" Url="html/379074b4-951b-9721-4dd8-b02e885abdc4.htm" />
+    <HelpKINode Title="methods" Url="html/7298f46e-bdba-9315-ab45-e6462010f999.htm" />
+    <HelpKINode Title="properties" Url="html/6c2c5a46-19d6-03ba-f1f4-513619722986.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VertexProperty(Of T).Id property" Url="html/524eb82e-eefb-2c2b-d6df-502c15bf1be9.htm" />
+  <HelpKINode Title="VertexProperty(Of T).Value property" Url="html/da363581-dc78-ed62-ad33-2c8e04e75767.htm" />
+  <HelpKINode Title="VertexProperty(Of T).VertexProperty constructor" Url="html/379074b4-951b-9721-4dd8-b02e885abdc4.htm" />
+  <HelpKINode Title="VertexProperty&lt;T&gt; class">
+    <HelpKINode Title="VertexProperty(T) Class" Url="html/d6df9c54-26b0-89c7-cdde-cec83f4024c1.htm" />
+    <HelpKINode Title="constructor" Url="html/379074b4-951b-9721-4dd8-b02e885abdc4.htm" />
+    <HelpKINode Title="methods" Url="html/7298f46e-bdba-9315-ab45-e6462010f999.htm" />
+    <HelpKINode Title="properties" Url="html/6c2c5a46-19d6-03ba-f1f4-513619722986.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VertexProperty&lt;T&gt;.Id property" Url="html/524eb82e-eefb-2c2b-d6df-502c15bf1be9.htm" />
+  <HelpKINode Title="VertexProperty&lt;T&gt;.Value property" Url="html/da363581-dc78-ed62-ad33-2c8e04e75767.htm" />
+  <HelpKINode Title="VertexProperty&lt;T&gt;.VertexProperty constructor" Url="html/379074b4-951b-9721-4dd8-b02e885abdc4.htm" />
+  <HelpKINode Title="VertexPropertyConverter class">
+    <HelpKINode Title="VertexPropertyConverter Class" Url="html/732ce479-ace5-5574-e247-cc26c76874ba.htm" />
+    <HelpKINode Title="constructor" Url="html/9f232cfb-06d7-6b8f-45c8-d19faac986a0.htm" />
+    <HelpKINode Title="methods" Url="html/3a9002de-724a-7ecc-e054-56707ba3f0db.htm" />
+    <HelpKINode Title="properties" Url="html/49b0c678-a3b2-ffd3-5d79-512c150c0233.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VertexPropertyConverter.CanConvert method" Url="html/0ca7ba43-96aa-885c-741e-6bc90eb4de49.htm" />
+  <HelpKINode Title="VertexPropertyConverter.ReadJson method" Url="html/04e365af-c7b7-72f2-511d-a81971ba3467.htm" />
+  <HelpKINode Title="VertexPropertyConverter.VertexPropertyConverter constructor" Url="html/9f232cfb-06d7-6b8f-45c8-d19faac986a0.htm" />
+  <HelpKINode Title="VertexPropertyConverter.WriteJson method" Url="html/389830f0-3803-be09-f699-92b211208bf1.htm" />
+  <HelpKINode Title="WriteJson method" Url="html/389830f0-3803-be09-f699-92b211208bf1.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs namespace" Url="html/2081f49e-203b-f906-574c-8a79f1f0e6f4.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.DocumentClientExtensions class" Url="html/a9fe8510-ba7a-f324-e42f-e7ed0631776b.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.IVertex interface" Url="html/dbad1859-6cf3-d5b1-8694-760c49558657.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.Vertex class" Url="html/ffd6ecbb-c57c-95d3-e449-d3d52ea6b0d8.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.VertexProperty(Of T) class" Url="html/d6df9c54-26b0-89c7-cdde-cec83f4024c1.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.VertexProperty&lt;T&gt; class" Url="html/d6df9c54-26b0-89c7-cdde-cec83f4024c1.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.VertexPropertyConverter class" Url="html/732ce479-ace5-5574-e247-cc26c76874ba.htm" />
+</HelpKI>
