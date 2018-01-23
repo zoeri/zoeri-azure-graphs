@@ -7,6 +7,7 @@
     <IsPackable>false</IsPackable>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\Zoeri.Shared.Pair.snk</AssemblyOriginatorKeyFile>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +29,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\source\Zoeri.Azure.Graphs\Zoeri.Azure.Graphs.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="webpack.config.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{B4E09A
 		Zoeri.Shared.Public.snk = Zoeri.Shared.Public.snk
 	EndProjectSection
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{851780AA-D43F-408A-9D45-2373B4DEF829}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{C3E66F90-07DA-4BDE-A8B9-96D97E7B9C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3E66F90-07DA-4BDE-A8B9-96D97E7B9C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3E66F90-07DA-4BDE-A8B9-96D97E7B9C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851780AA-D43F-408A-9D45-2373B4DEF829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851780AA-D43F-408A-9D45-2373B4DEF829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851780AA-D43F-408A-9D45-2373B4DEF829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851780AA-D43F-408A-9D45-2373B4DEF829}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
