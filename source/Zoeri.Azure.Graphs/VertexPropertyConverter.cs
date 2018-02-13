@@ -35,22 +35,29 @@ using Zoeri.Azure.Graphs.Threading;
 
 namespace Zoeri.Azure.Graphs
 {
+    /// <inheritdoc />
     /// <summary>
     /// Implements a strongly-typed JSON serialization and deserialization functionality to properties on any object decorated
-    /// with the <see cref="JsonPropertyAttribute" />.
+    /// with the <see cref="T:Newtonsoft.Json.JsonPropertyAttribute" />.
     /// </summary>
     public class VertexPropertyConverter
         : JsonConverter
     {
-        private static Dictionary<Type, IInternalGenericConverter> ConverterDictionary
+        #region Properties
+
+        private static Dictionary<Type, IIdValueConverter> ConverterDictionary
         {
             get;
-        } = new Dictionary<Type, IInternalGenericConverter>();
+        } = new Dictionary<Type, IIdValueConverter>();
 
         private static ReaderWriterLockSlim ConverterDictionaryLock
         {
             get;
         } = new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
+
+        #endregion
+
+        #region Methods
 
         /// <inheritdoc />
         public override bool CanConvert(Type objectType)
@@ -64,9 +71,9 @@ namespace Zoeri.Azure.Graphs
         public override object ReadJson
             (JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
-            var unboundType = typeof(InternalGenericConverter<>);
+            var unboundType = typeof(IdValueConverter<>);
             var boundType = unboundType.MakeGenericType(objectType);
-            IInternalGenericConverter internalConverter;
+            IIdValueConverter internalConverter;
 
             using (var readerLock = new UpgradeableReaderLock(ConverterDictionaryLock))
             {
@@ -74,7 +81,7 @@ namespace Zoeri.Azure.Graphs
                 {
                     using (readerLock.GetWriterLock())
                     {
-                        internalConverter = (IInternalGenericConverter) Activator.CreateInstance(boundType);
+                        internalConverter = (IIdValueConverter) Activator.CreateInstance(boundType);
                         ConverterDictionary.Add(boundType, internalConverter);
                     }
                 }
@@ -91,90 +98,6 @@ namespace Zoeri.Azure.Graphs
             writer.WriteValue(value);
         }
 
-        private interface IInternalGenericConverter
-        {
-            object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer);
-
-            void WriteJson(JsonWriter writer, object value, JsonSerializer serializer);
-        }
-
-        private class InternalGenericConverter<T>
-            : IInternalGenericConverter
-        {
-            private const string IdPropertyName = "id";
-            private const string ValuePropertyName = "value";
-
-            #region Implementation of IInternalGenericConverter
-
-            public void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
-            {
-                writer.WriteStartArray();
-                writer.WriteStartObject();
-                var typedValue = (VertexProperty<T>) value;
-                writer.WritePropertyName(IdPropertyName);
-                writer.WriteValue(typedValue.Id);
-                writer.WritePropertyName(ValuePropertyName);
-                writer.WriteValue(typedValue.Value);
-                writer.WriteEndObject();
-                writer.WriteEndArray();
-            }
-
-            public object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-            {
-                if (reader.TokenType != JsonToken.StartArray)
-                {
-                    return null;
-                }
-
-                var nestedObjectRead = reader.Read();
-                if (!nestedObjectRead)
-                {
-                    throw new Exception($"Could not read a nested object.");
-                }
-
-                if (reader.TokenType != JsonToken.StartObject)
-                {
-                    return null;
-                }
-
-                nestedObjectRead = reader.Read();
-
-                if (!nestedObjectRead)
-                {
-                    return null;
-                }
-
-                var vertexProperty = new VertexProperty<T>();
-
-                if ((string) reader.Value == IdPropertyName)
-                {
-                    vertexProperty.Id = reader.ReadAsString();
-                }
-
-                nestedObjectRead = reader.Read();
-
-                if (!nestedObjectRead)
-                {
-                    return vertexProperty;
-                }
-
-                var result = default(T);
-
-                if ((string) reader.Value == ValuePropertyName)
-                {
-                    nestedObjectRead = reader.Read();
-                    result = (T) Convert.ChangeType(reader.Value, typeof(T));
-                }
-
-                //EndObject
-                nestedObjectRead = reader.Read();
-                //EndArray
-                nestedObjectRead = reader.Read();
-
-                return result;
-            }
-
-            #endregion
-        }
+        #endregion
     }
 }
