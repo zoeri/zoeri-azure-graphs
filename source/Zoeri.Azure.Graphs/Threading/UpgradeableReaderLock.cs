@@ -30,22 +30,25 @@ using System.Threading;
 
 namespace Zoeri.Azure.Graphs.Threading
 {
+    /// <inheritdoc />
     /// <summary>
-    /// Provides an <see cref="IDisposable" />-based mechanism for using <see cref="ReaderWriterLockSlim" /> for read-only
+    /// Provides an <see cref="T:System.IDisposable" />-based mechanism for using <see cref="T:System.Threading.ReaderWriterLockSlim" /> for read-only
     /// synchronization.
     /// </summary>
-    internal class UpgradeableReaderLock
+    public class UpgradeableReaderLock
         : ReaderWriterLockContext
     {
+        /// <inheritdoc />
         /// <summary>
-        /// Creates a new <see cref="UpgradeableReaderLock" /> using an internally-managed <see cref="ReaderWriterLockSlim" />.
+        /// Creates a new <see cref="T:Zoeri.Azure.Graphs.Threading.UpgradeableReaderLock" /> using an internally-managed <see cref="T:System.Threading.ReaderWriterLockSlim" />.
         /// </summary>
         public UpgradeableReaderLock()
         {
         }
 
+        /// <inheritdoc />
         /// <summary>
-        /// Creates a new <see cref="UpgradeableReaderLock" /> using the specified <see cref="ReaderWriterLockSlim" />.
+        /// Creates a new <see cref="T:Zoeri.Azure.Graphs.Threading.UpgradeableReaderLock" /> using the specified <see cref="T:System.Threading.ReaderWriterLockSlim" />.
         /// </summary>
         public UpgradeableReaderLock(ReaderWriterLockSlim readerWriterLock)
             : base(readerWriterLock)
@@ -62,6 +65,7 @@ namespace Zoeri.Azure.Graphs.Threading
             return new WriterLock(Lock);
         }
 
+        /// <inheritdoc />
         /// <summary>
         /// Releases the read lock.
         /// </summary>

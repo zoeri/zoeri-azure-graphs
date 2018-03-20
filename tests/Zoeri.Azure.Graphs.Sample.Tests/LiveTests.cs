@@ -98,6 +98,9 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
                     context.CancellationTokenSource.Token);
 
                 Assert.AreEqual(originalUser.Email, readUser.Email);
+
+                await context.Client.DeleteVertexAsync(context.Collection, originalUser.Id,
+                    context.CancellationTokenSource.Token);
             }
         }
 
@@ -122,6 +125,9 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
                     context.CancellationTokenSource.Token);
 
                 Assert.AreEqual(expectedBalance, readUser.Balance);
+
+                await context.Client.DeleteVertexAsync(context.Collection, originalUser.Id,
+                    context.CancellationTokenSource.Token);
             }
         }
 

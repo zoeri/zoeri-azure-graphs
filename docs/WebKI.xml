@@ -5,6 +5,12 @@
   <HelpKINode Title="AppendProperty method" Url="html/8c18b823-5043-fd69-eaa3-cb8997607361.htm" />
   <HelpKINode Title="CanConvert method" Url="html/0ca7ba43-96aa-885c-741e-6bc90eb4de49.htm" />
   <HelpKINode Title="DeleteVertexAsync method" Url="html/7fad51f6-de2f-ec46-a663-cee5a2a881f9.htm" />
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="ReaderLock.Dispose Method " Url="html/953894fd-eb4b-d12b-9bdd-1bf5d55ee1b3.htm" />
+    <HelpKINode Title="ReaderWriterLockContext.Dispose Method " Url="html/f4c83e61-a5eb-bf41-31b0-883f927c801c.htm" />
+    <HelpKINode Title="UpgradeableReaderLock.Dispose Method " Url="html/9cf2b621-31ff-60a8-61fc-63e13336f1c6.htm" />
+    <HelpKINode Title="WriterLock.Dispose Method " Url="html/83f11cc5-6785-7d8b-6383-9df877b4a4ad.htm" />
+  </HelpKINode>
   <HelpKINode Title="DocumentClientExtensions class">
     <HelpKINode Title="DocumentClientExtensions Class" Url="html/a9fe8510-ba7a-f324-e42f-e7ed0631776b.htm" />
     <HelpKINode Title="methods" Url="html/2e0a0f66-37b5-e175-bb95-908a876c4f4f.htm" />
@@ -22,13 +28,48 @@
   <HelpKINode Title="DocumentClientExtensions.ToUpdateVertexCommand(Of TVertex) method" Url="html/3f61894f-7c64-a4e1-5b0f-7534d578a8ff.htm" />
   <HelpKINode Title="DocumentClientExtensions.ToUpdateVertexCommand&lt;TVertex&gt; method" Url="html/3f61894f-7c64-a4e1-5b0f-7534d578a8ff.htm" />
   <HelpKINode Title="DocumentClientExtensions.UpdateVertexAsync method" Url="html/d9e4d90f-72e3-b753-8a7b-0f77c9db2d01.htm" />
+  <HelpKINode Title="GetReaderLock method" Url="html/70479591-2b2b-37c7-e29c-71a23b0dd697.htm" />
+  <HelpKINode Title="GetUpgradeableReaderLock method" Url="html/c3aa25d0-f1b5-6dcc-ef2a-dd26b442ce56.htm" />
   <HelpKINode Title="GetVertexAsync method" Url="html/e4dd9f88-5e23-f0a7-9d48-3009287d82a6.htm" />
+  <HelpKINode Title="GetWriterLock method" Url="html/5b7ee8f4-2c55-5482-9558-467c3ab98361.htm" />
+  <HelpKINode Title="GeWriterLock method" Url="html/bd9c5e4f-8346-dd75-ffb5-17c57a0c5df9.htm" />
   <HelpKINode Title="Id property">
     <HelpKINode Title="IVertex.Id Property " Url="html/27fe5721-6cb6-166c-f4e7-e82131c514d2.htm" />
     <HelpKINode Title="Vertex.Id Property " Url="html/66060924-86d9-d5ce-aa8c-270e559b31a0.htm" />
     <HelpKINode Title="VertexProperty(T).Id Property " Url="html/524eb82e-eefb-2c2b-d6df-502c15bf1be9.htm" />
   </HelpKINode>
-  <HelpKINode Title="IdPropertyName field" Url="html/d3f528ef-9dd0-0384-d89e-7c9e3ba95b87.htm" />
+  <HelpKINode Title="IdPropertyName field">
+    <HelpKINode Title="IdValueConverter(T).IdPropertyName Field" Url="html/887fde50-1d08-ebd5-9bf0-2cb03e7159ac.htm" />
+    <HelpKINode Title="Vertex.IdPropertyName Field" Url="html/d3f528ef-9dd0-0384-d89e-7c9e3ba95b87.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IdValueConverter(Of T) class">
+    <HelpKINode Title="IdValueConverter(T) Class" Url="html/e8407fc6-16ef-cd55-a5a5-ddf1277b5365.htm" />
+    <HelpKINode Title="constructor" Url="html/565913a0-f6bd-9f3e-3a01-d6089f5b4c8c.htm" />
+    <HelpKINode Title="fields" Url="html/116b7945-5dbd-96a7-8246-13eaa623f09b.htm" />
+    <HelpKINode Title="methods" Url="html/595fb5f0-85bb-2656-4152-d393efe7aacd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IdValueConverter(Of T).IdPropertyName field" Url="html/887fde50-1d08-ebd5-9bf0-2cb03e7159ac.htm" />
+  <HelpKINode Title="IdValueConverter(Of T).IdValueConverter constructor" Url="html/565913a0-f6bd-9f3e-3a01-d6089f5b4c8c.htm" />
+  <HelpKINode Title="IdValueConverter(Of T).ReadJson method" Url="html/c9da899a-d4da-9565-6c87-b7a07a1bfc6d.htm" />
+  <HelpKINode Title="IdValueConverter(Of T).ValuePropertyName field" Url="html/208ef222-cf7d-5d54-4d69-47e207a49a30.htm" />
+  <HelpKINode Title="IdValueConverter(Of T).WriteJson method" Url="html/7fe3eef0-450d-c683-f5a2-a8f52e8190d2.htm" />
+  <HelpKINode Title="IdValueConverter&lt;T&gt; class">
+    <HelpKINode Title="IdValueConverter(T) Class" Url="html/e8407fc6-16ef-cd55-a5a5-ddf1277b5365.htm" />
+    <HelpKINode Title="constructor" Url="html/565913a0-f6bd-9f3e-3a01-d6089f5b4c8c.htm" />
+    <HelpKINode Title="fields" Url="html/116b7945-5dbd-96a7-8246-13eaa623f09b.htm" />
+    <HelpKINode Title="methods" Url="html/595fb5f0-85bb-2656-4152-d393efe7aacd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IdValueConverter&lt;T&gt;.IdPropertyName field" Url="html/887fde50-1d08-ebd5-9bf0-2cb03e7159ac.htm" />
+  <HelpKINode Title="IdValueConverter&lt;T&gt;.IdValueConverter constructor" Url="html/565913a0-f6bd-9f3e-3a01-d6089f5b4c8c.htm" />
+  <HelpKINode Title="IdValueConverter&lt;T&gt;.ReadJson method" Url="html/c9da899a-d4da-9565-6c87-b7a07a1bfc6d.htm" />
+  <HelpKINode Title="IdValueConverter&lt;T&gt;.ValuePropertyName field" Url="html/208ef222-cf7d-5d54-4d69-47e207a49a30.htm" />
+  <HelpKINode Title="IdValueConverter&lt;T&gt;.WriteJson method" Url="html/7fe3eef0-450d-c683-f5a2-a8f52e8190d2.htm" />
+  <HelpKINode Title="IIdValueConverter interface">
+    <HelpKINode Title="IIdValueConverter Interface" Url="html/345400cd-f80a-df0a-686a-b366b49944c3.htm" />
+    <HelpKINode Title="methods" Url="html/08cc91c5-f26f-d7d9-3051-2e238f7fb3a7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IIdValueConverter.ReadJson method" Url="html/0dfe1d0e-0fa0-65ea-b25e-4898b98089ea.htm" />
+  <HelpKINode Title="IIdValueConverter.WriteJson method" Url="html/0363f91d-cefd-46cc-58d0-37535710e203.htm" />
   <HelpKINode Title="IVertex interface">
     <HelpKINode Title="IVertex Interface" Url="html/dbad1859-6cf3-d5b1-8694-760c49558657.htm" />
     <HelpKINode Title="properties" Url="html/dc02a440-15db-1ebc-7b7b-42719db92d4b.htm" />
@@ -42,12 +83,41 @@
     <HelpKINode Title="Vertex.Label Property " Url="html/8403438d-6a79-095d-1bbc-83966992dfdc.htm" />
   </HelpKINode>
   <HelpKINode Title="LabelPropertyName field" Url="html/6f8d4f7c-96f6-be97-3b39-753c27510645.htm" />
+  <HelpKINode Title="Lock property" Url="html/22b49f28-d5ec-5f67-c252-3462a11b05f6.htm" />
   <HelpKINode Title="Properties property">
     <HelpKINode Title="IVertex.Properties Property " Url="html/eac8fa90-ee3d-ac95-2db0-fff13fcfa8a7.htm" />
     <HelpKINode Title="Vertex.Properties Property " Url="html/3017da31-ec0a-5bee-c4f6-ca051d436a35.htm" />
   </HelpKINode>
   <HelpKINode Title="PropertiesPropertyName field" Url="html/1df1201b-98da-7bf0-9f49-198521ad9f45.htm" />
-  <HelpKINode Title="ReadJson method" Url="html/04e365af-c7b7-72f2-511d-a81971ba3467.htm" />
+  <HelpKINode Title="ReaderLock class">
+    <HelpKINode Title="ReaderLock Class" Url="html/fefd93cc-4daf-0495-b908-4003057ff0c1.htm" />
+    <HelpKINode Title="constructor" Url="html/009bb2bd-f2a7-2563-a012-b8bb6c1e2cea.htm" />
+    <HelpKINode Title="methods" Url="html/e8192bb3-fdd8-969a-4989-daa9d1116f87.htm" />
+    <HelpKINode Title="properties" Url="html/0469038f-412b-db45-b428-6309dd6115dd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ReaderLock.Dispose method" Url="html/953894fd-eb4b-d12b-9bdd-1bf5d55ee1b3.htm" />
+  <HelpKINode Title="ReaderLock.ReaderLock constructor" Url="html/009bb2bd-f2a7-2563-a012-b8bb6c1e2cea.htm" />
+  <HelpKINode Title="ReaderWriterLockContext class">
+    <HelpKINode Title="ReaderWriterLockContext Class" Url="html/793959e1-65d0-2f86-2362-f9f6da43cae4.htm" />
+    <HelpKINode Title="constructor" Url="html/57fbcb98-3c4a-a3fc-346f-56a817972b2d.htm" />
+    <HelpKINode Title="methods" Url="html/abc76b8f-1885-9b81-d802-146f5845399a.htm" />
+    <HelpKINode Title="properties" Url="html/e7878428-3612-004a-03be-6064ca7f517f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ReaderWriterLockContext.Dispose method" Url="html/f4c83e61-a5eb-bf41-31b0-883f927c801c.htm" />
+  <HelpKINode Title="ReaderWriterLockContext.Lock property" Url="html/22b49f28-d5ec-5f67-c252-3462a11b05f6.htm" />
+  <HelpKINode Title="ReaderWriterLockContext.ReaderWriterLockContext constructor" Url="html/57fbcb98-3c4a-a3fc-346f-56a817972b2d.htm" />
+  <HelpKINode Title="ReaderWriterLockSlimExtensions class">
+    <HelpKINode Title="ReaderWriterLockSlimExtensions Class" Url="html/2cc46917-ac9a-6ab9-74de-10247d3df809.htm" />
+    <HelpKINode Title="methods" Url="html/1a0f1cae-1dbe-f9f9-5b72-b712a2c778c3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ReaderWriterLockSlimExtensions.GetReaderLock method" Url="html/70479591-2b2b-37c7-e29c-71a23b0dd697.htm" />
+  <HelpKINode Title="ReaderWriterLockSlimExtensions.GetUpgradeableReaderLock method" Url="html/c3aa25d0-f1b5-6dcc-ef2a-dd26b442ce56.htm" />
+  <HelpKINode Title="ReaderWriterLockSlimExtensions.GeWriterLock method" Url="html/bd9c5e4f-8346-dd75-ffb5-17c57a0c5df9.htm" />
+  <HelpKINode Title="ReadJson method">
+    <HelpKINode Title="IdValueConverter(T).ReadJson Method " Url="html/c9da899a-d4da-9565-6c87-b7a07a1bfc6d.htm" />
+    <HelpKINode Title="IIdValueConverter.ReadJson Method " Url="html/0dfe1d0e-0fa0-65ea-b25e-4898b98089ea.htm" />
+    <HelpKINode Title="VertexPropertyConverter.ReadJson Method " Url="html/04e365af-c7b7-72f2-511d-a81971ba3467.htm" />
+  </HelpKINode>
   <HelpKINode Title="SubmitWithSingleResultAsync method" Url="html/1db2aee4-181d-4510-2b6d-1092802b1069.htm" />
   <HelpKINode Title="ToAddEdgeCommand(Of TSource, TTarget) method" Url="html/bd3eb934-6d29-68a0-e056-1e38111f78f4.htm" />
   <HelpKINode Title="ToAddEdgeCommand&lt;TSource, TTarget&gt; method" Url="html/bd3eb934-6d29-68a0-e056-1e38111f78f4.htm" />
@@ -62,7 +132,17 @@
   <HelpKINode Title="TypePropertyName field" Url="html/4c6d3c1d-be31-f27b-4809-fa53d359bee4.htm" />
   <HelpKINode Title="TypePropertyValue field" Url="html/70fd4284-bdef-8eb6-3670-9114d97028c7.htm" />
   <HelpKINode Title="UpdateVertexAsync method" Url="html/d9e4d90f-72e3-b753-8a7b-0f77c9db2d01.htm" />
+  <HelpKINode Title="UpgradeableReaderLock class">
+    <HelpKINode Title="UpgradeableReaderLock Class" Url="html/c2d5369a-5f41-ef8f-b8f1-2306b3038385.htm" />
+    <HelpKINode Title="constructor" Url="html/fdb02483-b552-8595-3157-d027e5c1e7cd.htm" />
+    <HelpKINode Title="methods" Url="html/abb572f2-55b5-de09-3a18-176ddd5b4b8a.htm" />
+    <HelpKINode Title="properties" Url="html/f2bc34f0-467a-befc-7623-b07c5b2fcf7f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpgradeableReaderLock.Dispose method" Url="html/9cf2b621-31ff-60a8-61fc-63e13336f1c6.htm" />
+  <HelpKINode Title="UpgradeableReaderLock.GetWriterLock method" Url="html/5b7ee8f4-2c55-5482-9558-467c3ab98361.htm" />
+  <HelpKINode Title="UpgradeableReaderLock.UpgradeableReaderLock constructor" Url="html/fdb02483-b552-8595-3157-d027e5c1e7cd.htm" />
   <HelpKINode Title="Value property" Url="html/da363581-dc78-ed62-ad33-2c8e04e75767.htm" />
+  <HelpKINode Title="ValuePropertyName field" Url="html/208ef222-cf7d-5d54-4d69-47e207a49a30.htm" />
   <HelpKINode Title="Vertex class">
     <HelpKINode Title="Vertex Class" Url="html/ffd6ecbb-c57c-95d3-e449-d3d52ea6b0d8.htm" />
     <HelpKINode Title="constructor" Url="html/0f30ebde-cc25-fa57-8fc1-70e82b78cc55.htm" />
@@ -108,10 +188,31 @@
   <HelpKINode Title="VertexPropertyConverter.ReadJson method" Url="html/04e365af-c7b7-72f2-511d-a81971ba3467.htm" />
   <HelpKINode Title="VertexPropertyConverter.VertexPropertyConverter constructor" Url="html/9f232cfb-06d7-6b8f-45c8-d19faac986a0.htm" />
   <HelpKINode Title="VertexPropertyConverter.WriteJson method" Url="html/389830f0-3803-be09-f699-92b211208bf1.htm" />
-  <HelpKINode Title="WriteJson method" Url="html/389830f0-3803-be09-f699-92b211208bf1.htm" />
+  <HelpKINode Title="WriteJson method">
+    <HelpKINode Title="IdValueConverter(T).WriteJson Method " Url="html/7fe3eef0-450d-c683-f5a2-a8f52e8190d2.htm" />
+    <HelpKINode Title="IIdValueConverter.WriteJson Method " Url="html/0363f91d-cefd-46cc-58d0-37535710e203.htm" />
+    <HelpKINode Title="VertexPropertyConverter.WriteJson Method " Url="html/389830f0-3803-be09-f699-92b211208bf1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WriterLock class">
+    <HelpKINode Title="WriterLock Class" Url="html/9a8aaeec-b743-a8e6-81c4-75cc40e52a36.htm" />
+    <HelpKINode Title="constructor" Url="html/27d9ca12-0808-11d7-9b74-e0c84a5e16f4.htm" />
+    <HelpKINode Title="methods" Url="html/41c87096-4ef0-40e0-ca82-20fae9b6b09d.htm" />
+    <HelpKINode Title="properties" Url="html/c90a6f7f-6a7c-9834-78ff-31970e9579c6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WriterLock.Dispose method" Url="html/83f11cc5-6785-7d8b-6383-9df877b4a4ad.htm" />
+  <HelpKINode Title="WriterLock.WriterLock constructor" Url="html/27d9ca12-0808-11d7-9b74-e0c84a5e16f4.htm" />
   <HelpKINode Title="Zoeri.Azure.Graphs namespace" Url="html/2081f49e-203b-f906-574c-8a79f1f0e6f4.htm" />
   <HelpKINode Title="Zoeri.Azure.Graphs.DocumentClientExtensions class" Url="html/a9fe8510-ba7a-f324-e42f-e7ed0631776b.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.IdValueConverter(Of T) class" Url="html/e8407fc6-16ef-cd55-a5a5-ddf1277b5365.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.IdValueConverter&lt;T&gt; class" Url="html/e8407fc6-16ef-cd55-a5a5-ddf1277b5365.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.IIdValueConverter interface" Url="html/345400cd-f80a-df0a-686a-b366b49944c3.htm" />
   <HelpKINode Title="Zoeri.Azure.Graphs.IVertex interface" Url="html/dbad1859-6cf3-d5b1-8694-760c49558657.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.Threading namespace" Url="html/f15a9d70-6b27-18ed-765b-3040ab0d88f6.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.Threading.ReaderLock class" Url="html/fefd93cc-4daf-0495-b908-4003057ff0c1.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.Threading.ReaderWriterLockContext class" Url="html/793959e1-65d0-2f86-2362-f9f6da43cae4.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.Threading.ReaderWriterLockSlimExtensions class" Url="html/2cc46917-ac9a-6ab9-74de-10247d3df809.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.Threading.UpgradeableReaderLock class" Url="html/c2d5369a-5f41-ef8f-b8f1-2306b3038385.htm" />
+  <HelpKINode Title="Zoeri.Azure.Graphs.Threading.WriterLock class" Url="html/9a8aaeec-b743-a8e6-81c4-75cc40e52a36.htm" />
   <HelpKINode Title="Zoeri.Azure.Graphs.Vertex class" Url="html/ffd6ecbb-c57c-95d3-e449-d3d52ea6b0d8.htm" />
   <HelpKINode Title="Zoeri.Azure.Graphs.VertexProperty(Of T) class" Url="html/d6df9c54-26b0-89c7-cdde-cec83f4024c1.htm" />
   <HelpKINode Title="Zoeri.Azure.Graphs.VertexProperty&lt;T&gt; class" Url="html/d6df9c54-26b0-89c7-cdde-cec83f4024c1.htm" />

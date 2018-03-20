@@ -55,8 +55,8 @@ namespace Zoeri.Azure.Graphs.Sample.Tests
             //TODO: Configure the test environment to connect to a live graph database. Use appSettings.local.json as a template.
             var builder = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
-                    //.AddJsonFile("appsettings.json")
-                    .AddJsonFile("appsettings.local.json")
+                    .AddJsonFile("appsettings.json")
+                    //.AddJsonFile("appsettings.local.json")
                 ;
 
             Configuration = builder.Build();

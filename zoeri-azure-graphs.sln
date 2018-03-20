@@ -21,12 +21,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{B4E09A
 		.gitignore = .gitignore
 		LICENSE = LICENSE
 		README.md = README.md
-		zoeri-azure-graphs.shfbproj = zoeri-azure-graphs.shfbproj
 		Zoeri.Shared.Pair.snk = Zoeri.Shared.Pair.snk
 		Zoeri.Shared.Public.snk = Zoeri.Shared.Public.snk
 	EndProjectSection
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{851780AA-D43F-408A-9D45-2373B4DEF829}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "zoeri-azure-graphs", "zoeri-azure-graphs.shfbproj", "{4ECCECCF-9D1E-44FC-A2C8-CD2B8411ACBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +51,10 @@ Global
 		{851780AA-D43F-408A-9D45-2373B4DEF829}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{851780AA-D43F-408A-9D45-2373B4DEF829}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{851780AA-D43F-408A-9D45-2373B4DEF829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECCECCF-9D1E-44FC-A2C8-CD2B8411ACBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECCECCF-9D1E-44FC-A2C8-CD2B8411ACBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECCECCF-9D1E-44FC-A2C8-CD2B8411ACBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECCECCF-9D1E-44FC-A2C8-CD2B8411ACBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +63,7 @@ Global
 		{62A3A8FB-DFCE-4D3A-B785-34D78623FE54} = {8FCF3287-7EED-45D1-B8AE-674D5DCA95EA}
 		{BADB9684-0B4D-4D90-ACF1-B952A725B1FA} = {95BA9FDF-41EA-4157-8BF9-CF1838029885}
 		{C3E66F90-07DA-4BDE-A8B9-96D97E7B9C5B} = {48D59408-5F63-45A1-880E-62D6FA89E7D0}
+		{4ECCECCF-9D1E-44FC-A2C8-CD2B8411ACBF} = {B4E09A5E-F38B-4B69-A416-99216345593E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04B2E796-6C98-4188-A122-63A95EB37143}

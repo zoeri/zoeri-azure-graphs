@@ -34,7 +34,7 @@ namespace Zoeri.Azure.Graphs.Threading
     /// Provides an <see cref="IDisposable" />-based mechanism for using <see cref="ReaderWriterLockSlim" /> for read-only
     /// synchronization.
     /// </summary>
-    internal class WriterLock
+    public class WriterLock
         : ReaderWriterLockContext
     {
         /// <summary>

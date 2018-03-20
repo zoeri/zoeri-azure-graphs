@@ -30,15 +30,17 @@ using System.Threading;
 
 namespace Zoeri.Azure.Graphs.Threading
 {
+    /// <inheritdoc />
     /// <summary>
     /// Provides common functionality for classes working with <see cref="ReaderWriterLockSlim" />.
     /// </summary>
-    internal abstract class ReaderWriterLockContext
+    public abstract class ReaderWriterLockContext
         : IDisposable
     {
+        /// <inheritdoc />
         /// <summary>
-        /// Creates a new instances of a derived type using a new instance of <see cref="ReaderWriterLockSlim" /> created using
-        /// <see cref="LockRecursionPolicy.SupportsRecursion" />.
+        /// Creates a new instances of a derived type using a new instance of <see cref="T:System.Threading.ReaderWriterLockSlim" /> created using
+        /// <see cref="F:System.Threading.LockRecursionPolicy.SupportsRecursion" />.
         /// </summary>
         protected ReaderWriterLockContext()
             : this(new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion))
@@ -52,9 +54,7 @@ namespace Zoeri.Azure.Graphs.Threading
         /// <exception cref="ArgumentNullException">If <paramref name="readerWriterLock" /> an exception will be thrown.</exception>
         protected ReaderWriterLockContext(ReaderWriterLockSlim readerWriterLock)
         {
-            if (readerWriterLock == null) throw new ArgumentNullException(nameof(readerWriterLock));
-
-            Lock = readerWriterLock;
+            Lock = readerWriterLock ?? throw new ArgumentNullException(nameof(readerWriterLock));
         }
 
         /// <summary>
@@ -65,6 +65,7 @@ namespace Zoeri.Azure.Graphs.Threading
             get;
         }
 
+        /// <inheritdoc />
         /// <summary>
         /// Releases the lock.
         /// </summary>

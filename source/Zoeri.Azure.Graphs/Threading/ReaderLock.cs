@@ -35,11 +35,12 @@ namespace Zoeri.Azure.Graphs.Threading
     /// Provides an <see cref="IDisposable" />-based mechanism for using <see cref="ReaderWriterLockSlim" /> for read-only
     /// synchronization.
     /// </summary>
-    internal class ReaderLock
+    public class ReaderLock
         : ReaderWriterLockContext
     {
+        /// <inheritdoc />
         /// <summary>
-        /// Creates a new <see cref="ReaderLock" /> using an internally-managed <see cref="ReaderWriterLockSlim" />.
+        /// Creates a new <see cref="T:Zoeri.Azure.Graphs.Threading.ReaderLock" /> using an internally-managed <see cref="T:System.Threading.ReaderWriterLockSlim" />.
         /// </summary>
         public ReaderLock()
             : this(new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion))
@@ -57,6 +58,7 @@ namespace Zoeri.Azure.Graphs.Threading
 
         #region IDisposable
 
+        /// <inheritdoc />
         /// <summary>
         /// Releases the read lock.
         /// </summary>

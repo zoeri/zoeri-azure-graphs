@@ -33,7 +33,7 @@ namespace Zoeri.Azure.Graphs.Threading
     /// <summary>
     /// Provides extension methods to streamline the consumption of <see cref="ReaderWriterLockSlim" />.
     /// </summary>
-    internal static class ReaderWriterLockSlimExtensions
+    public static class ReaderWriterLockSlimExtensions
     {
         /// <summary>
         /// Gets a <see cref="ReaderLock" /> tied to the specified <paramref name="readerWriterLock" />.
