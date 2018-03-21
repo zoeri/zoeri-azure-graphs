@@ -1,8 +1,0 @@
-version: '3'
-
-services:
-  zoeri.azure.graphs.sample:
-    image: zoeri.azure.graphs.sample
-    build:
-      context: .
-      dockerfile: samples\Zoeri.Azure.Graphs.Sample\Dockerfile
